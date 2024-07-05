@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Menu</title>
+<style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: whitesmoke;
+    height: 100px;
+}
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+  }
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #navbar li {
+    padding: 20px;
+  }
+  #navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  #navbar a:hover {
+      color: rgb(0, 0, 0);
+  }
+li{
+  background-color: #77B0AA;
+    color: #E3FEF7;
+    margin: 10px 5px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+li:hover{
+  background-color: transparent;
+    color: rgb(0, 0, 0);
+
+}
+p {
+  font-size: 25px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  text-align: center;
+  width: 100%;
+}
+.footer{
+
+  width: 100%;
+  max-height: 100px;
+  background-color: #135D66;
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<div style="height: 730px">
+  <!-- Content to create scrolling -->
+</div>
+<div class="footer" ><p>Made with ❤ by PAYAL </p></div>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = '#135D66';
+    } else {
+      navbar.style.backgroundColor = '#135D66';
+    }
+  });
+</script>
+
+</body>
+</html>
